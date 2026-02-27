@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'paginas/pagina1.dart';
-import 'paginas/pagina2.dart';
-import 'paginas/pagina3.dart';
+import 'paginas/compras.dart';
+import 'paginas/detallecompra.dart';
+import 'paginas/buscar.dart';
 
 void main() {
   runApp(const MiAplicacion());

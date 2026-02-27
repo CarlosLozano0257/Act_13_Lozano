@@ -11,7 +11,7 @@ class Pagina1 extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
       child: InkWell(
         onTap: () {
-          Navigator.pushNamed(context, '/pagina2');
+          Navigator.pushNamed(context, '/detallecompra');
         },
         child: Row(
           children: [
@@ -44,7 +44,7 @@ class Pagina1 extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {
-                Navigator.pushNamed(context, '/pagina2');
+                Navigator.pushNamed(context, '/detallecompra');
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.blue,
@@ -114,7 +114,7 @@ Widget _crearBottomNav(BuildContext context, int indexActual) {
         // Usa pushReplacementNamed para no amontonar pantallas
         Navigator.pushReplacementNamed(context, '/'); 
       } else if (index == 1 && indexActual != 1) {
-        Navigator.pushReplacementNamed(context, '/pagina3'); 
+        Navigator.pushReplacementNamed(context, '/buscar'); 
       }
     },
     items: const [
